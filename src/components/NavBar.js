@@ -47,9 +47,9 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className='social-icon'>
-                <a href='#'><img src={navIcon1} alt=''/></a>
-                <a href='#'><img src={navIcon2} alt=''/></a>
-                <a href='#'><img src={navIcon3} alt=''/></a>
+                <a href='https://www.linkedin.com/in/suman-samanta-5a12aa3a6' target='_blank' rel='noopener noreferrer'><img src={navIcon1} alt='LinkedIn'/></a>
+                <a href='https://github.com/sumansamantapku-rgb' target='_blank' rel='noopener noreferrer'><img src={navIcon2} alt='GitHub'/></a>
+                <a href='https://leetcode.com/u/suman6969/' target='_blank' rel='noopener noreferrer'><img src={navIcon3} alt='LeetCode'/></a>
             </div>
             <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>
           </span>
