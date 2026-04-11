@@ -35,23 +35,35 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>Language: Java, JavaScript (ES6+), HTML5 & CSS3, React.js, Node.js, Express.js, MongoDB</p>
+                        <p>Frontend Skills:  Bootstrap / Tailwind CSS, DOM Manipulation, REST API Integration</p>
+                        <p>Backend Skills: RESTful API Development, Authentication (JWT, bcrypt), Middleware handling</p>
+                        <p>Database: MongoDB, MySQL</p>
+                        <p>Tools & Technologies: Git & GitHub, Docker, npm / yarn, AWS, ChatGPT, Copilot</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>Core Skills</h5>
+                                
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Mern Stack</h5>
+                                <h5>Frontend Skills</h5>
+                                
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Git & GitHub</h5>
+                                <h5>Backend Skills</h5>
+                         
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Problem Solving</h5>
+                                <h5>Database</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="Image" />
+                                <h5>Tools & Technologies</h5>
+                                
                             </div>
                         </Carousel>
                     </div>

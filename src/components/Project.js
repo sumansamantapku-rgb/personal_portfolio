@@ -16,33 +16,39 @@ export const Project = () => {
   const projects = [
     {
       title: "Ecommerce Website",
-      description: "Design & Development",
+      description: "Home Page & Product Listing",
       imgUrl: project,
+      link: "https://sumansamantapku-rgb-react-project.vercel.app/"
     },
     {
       title: "Ecommerce Website",
-      description: "Design & Development",
+      description: "Product Listing & Shopping Cart",
       imgUrl: projImg2,
+      link: "https://sumansamantapku-rgb-react-project.vercel.app/"
     },
     {
       title: "Ecommerce Website",
-      description: "Design & Development",
+      description: "Admin Dashboard",
       imgUrl: projImg3,
+      link: "https://sumansamantapku-rgb-react-project-e.vercel.app/"
     },
     {
       title: "Personal Portfolio",
-      description: "Design & Development",
+      description: "Home Page",
       imgUrl: projImg4,
+      link: "https://your-portfolio-link.com"
     },
     {
       title: "Personal Portfolio",
-      description: "Design & Development",
+      description: "Project Showcase",
       imgUrl: projImg5,
+      link: "https://your-portfolio-link.com"
     },
     {
       title: "Personal Portfolio",
-      description: "Design & Development",
+      description: "Mail to Contact Form",
       imgUrl: projImg6,
+      link: "https://your-portfolio-link.com"
     },
   ];
 
@@ -55,7 +61,14 @@ export const Project = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h1>1. Ecommerce Website</h1>
+                <p>• Built a full-stack E-Commerce application using MERN stack </p>
+                <p>• Developed and integrated RESTful APIs for seamless frontend-backend communication</p>
+                <p>• Implemented authentication, product management, and shopping cart functionality </p>
+                <h1>2. Personal Portfolio</h1>
+                <p>• Built a responsive portfolio website to showcase projects and technical skills  </p>
+                <p>• Designed clean UI with modern frontend technologies </p>
+                <p>• Ensured performance optimization and cross-device compatibility </p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

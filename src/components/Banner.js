@@ -42,6 +42,13 @@ export const Banner = () => {
         }
     }
 
+    const handleConnectClick = () => {
+        const contactSection = document.getElementById('connect');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
     return (
         <section className="banner" id="home">
             <Container>
@@ -49,8 +56,8 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi I'm Suman `}<span className="wrap">{text}</span></h1>
-                        <p>lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size={25} /></button>
+                        <p>I am a passionate Web Developer specializing in the MERN stack, with hands-on experience in building scalable and responsive web applications. I work with MongoDB, Express.js, React.js, and Node.js to develop full-stack solutions, handling both frontend and backend development.</p>
+                        <button onClick={handleConnectClick}>Let's Connect <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={7}>
                         <img src={headerImg} alt="Header Img"/>         

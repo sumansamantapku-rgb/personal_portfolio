@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useState, useEffect } from 'react';
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/Cheerful developer with glowing laptop.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -29,12 +29,18 @@ function NavBar() {
         setActiveLink(value);
     }
 
+    const handleConnectClick = () => {
+        const contactSection = document.getElementById('connect');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 
   return (
     <Navbar expand="lg" className={scrolled ? 'scrolled' : ""}>
       <Container>
         <Navbar.Brand href="#home">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" style={{ width: '120px', height: 'auto' }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -51,7 +57,7 @@ function NavBar() {
                 <a href='https://github.com/sumansamantapku-rgb' target='_blank' rel='noopener noreferrer'><img src={navIcon2} alt='GitHub'/></a>
                 <a href='https://leetcode.com/u/suman6969/' target='_blank' rel='noopener noreferrer'><img src={navIcon3} alt='LeetCode'/></a>
             </div>
-            <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+            <button className='vvd' onClick={handleConnectClick}><span>Let's Connect</span></button>
           </span>
         </Navbar.Collapse>
       </Container>
